@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0d7ae7, #c3cfe2); /* Gradient background */
+  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+/* CSS file for ItemForm component */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe9a0 0%, #ffcaaf 100%); /* Soft gradient background */
+}
+
+.item-form {
+    background-color: #ffffff; /* Clean white background for form */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    max-width: 450px; /* Slightly wider form */
+    width: 100%;
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.item-form:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.item-form h2 {
+    text-align: center;
+    margin-bottom: 25px; /* Increased margin */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Darker title color */
+}
+
+.form-group {
+    margin-bottom: 20px; /* More spacing between form groups */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600; /* Slightly bolder label */
+    margin-bottom: 8px; /* Increased margin */
+    color: #444; /* Darker color for better contrast */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px; /* More padding for comfort */
+    font-size: 1rem;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* More rounded edges */
+    transition: border-color 0.3s; /* Transition for focus effect */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; /* Remove outline */
+    border-color: #ff8c00; /* Orange border on focus */
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.5); /* Soft glow effect */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* More padding for comfort */
+    background-color: #ff5722; /* Vibrant orange */
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.1rem; /* Slightly larger font */
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* More rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover and active effects */
+}
+
+button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Scale down effect on click */
+}

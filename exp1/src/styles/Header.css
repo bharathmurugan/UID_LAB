@@ -1,0 +1,12 @@
+/* src/styles/Header.css */
+.header {
+    background-color:gray;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+  }
+  

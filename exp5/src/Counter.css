@@ -1,0 +1,100 @@
+/* Counter.css */
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); /* Warm sunset gradient */
+    font-family: 'Arial', sans-serif;
+}
+
+.counter-title {
+    font-size: 2.5rem;
+    color: #ffffff; /* White for better contrast */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.counter-display {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque for better readability */
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.counter-number {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff; /* White for consistency */
+    animation: popIn 0.3s ease;
+    text-align: center;
+}
+
+.positive {
+    color: #76c7c0; /* Soft teal for positive numbers */
+}
+
+.negative {
+    color: #ffccbc; /* Light coral for negative numbers */
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.counter-btn {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #ffffff; /* White text for contrast */
+    background-color: #6c63ff; /* Bright violet */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.counter-btn:hover {
+    background-color: #5b54e4; /* Darker violet on hover */
+    transform: scale(1.1);
+}
+
+.increment {
+    background-color: #4caf50; /* Green for increment button */
+}
+
+.increment:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.decrement {
+    background-color: #f44336; /* Red for decrement button */
+}
+
+.decrement:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Animations */
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
